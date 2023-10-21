@@ -1,0 +1,13 @@
+.buttons.clear - canvas {
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    transition: all 0.3s ease;
+}
+.clear - canvas:hover {
+    color: #fff;
+    background: #6c757d;
+}
+.buttons.save - img {
+    background: #4a98f7;
+    border: 1px solid #4a98f7;
+}

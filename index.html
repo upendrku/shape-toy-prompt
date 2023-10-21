@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shape Toy Prompt</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="tools-board">
+        <div class="row">
+          <label class="title">Shapes</label>
+          <ul class="options">
+            <li class="option">
+              <button type="button" class="tool" id="rectangle">
+                Rectangle
+              </button>
+            </li>
+            <li class="option">
+              <button type="button" class="tool" id="circle">Circle</button>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color" />
+              <label for="fill-color">Fill color</label>
+            </li>
+            <div class="row colors" id="colors-section">
+              <label class="title">Colors</label>
+              <ul class="options">
+                <li class="option selected"></li>
+                <li class="option"></li>
+                <li class="option"></li>
+                <li class="option">
+                  <input type="color" id="color-picker" value="#4A98F7" />
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+        <div class="row" id="options-section" style="visibility: hidden">
+          <label class="title">Options</label>
+          <ul class="options">
+            <div id="rect-options">
+              <li>
+                <div>Width</div>
+                <input
+                  type="range"
+                  id="width-slider"
+                  min="1"
+                  max="300"
+                  value="50"
+                />
+              </li>
+              <li>
+                <div>Height</div>
+                <input
+                  type="range"
+                  id="height-slider"
+                  min="1"
+                  max="300"
+                  value="50"
+                />
+              </li>
+            </div>
+            <div id="circle-options">
+              <li>
+                <div>Radius</div>
+                <input
+                  type="range"
+                  id="radius-slider"
+                  min="1"
+                  max="200"
+                  value="50"
+                />
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+    </div>
+  </body>
+</html>
